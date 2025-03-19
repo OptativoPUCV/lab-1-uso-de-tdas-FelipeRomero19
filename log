@@ -135,3 +135,56 @@ exercises.c:99:7: error: 'pila_aux' may be used uninitialized in this function [
 cc1.exe: all warnings being treated as errors
 Compilation failed
 fba8880
+Wed, Mar 19, 2025  9:25:00 AM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'copia_pila':
+exercises.c:97:18: error: comparison between pointer and integer [-Werror]
+    while(top(P1) != -1){
+                  ^~
+exercises.c:98:22: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+       int elemento = top(P1) ;
+                      ^~~
+exercises.c:99:22: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+       push(pila_aux, elemento) ;
+                      ^~~~~~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'int'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+In file included from test.c:5:0:
+exercises.c:103:24: error: comparison between pointer and integer [-Werror]
+    while(top(pila_aux) != -1){
+                        ^~
+exercises.c:104:22: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+       int elemento = top(pila_aux) ;
+                      ^~~
+exercises.c:105:16: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+       push(P1, elemento) ;
+                ^~~~~~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'int'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+In file included from test.c:5:0:
+exercises.c:106:16: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+       push(P2, elemento) ;
+                ^~~~~~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'int'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+In file included from test.c:5:0:
+exercises.c:111:11: error: 'return' with a value, in function returning void [-Werror]
+    return P2 ;
+           ^~
+exercises.c:95:6: note: declared here
+ void copia_pila(Stack* P1, Stack* P2) {
+      ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+3a5f121
