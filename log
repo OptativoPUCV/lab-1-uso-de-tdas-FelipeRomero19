@@ -62,3 +62,14 @@ exercises.c:67:13: error: assignment makes integer from pointer without a cast [
 cc1.exe: all warnings being treated as errors
 Compilation failed
 43191e6
+Wed, Mar 19, 2025  9:17:19 AM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:64:16: error: comparison between pointer and integer [-Werror]
+    while(valor != -1)
+                ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+dd7d410
