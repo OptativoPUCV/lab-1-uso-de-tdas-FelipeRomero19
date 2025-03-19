@@ -278,3 +278,47 @@ stack.h:11:6: note: expected 'void *' but argument is of type 'int'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 eb48d80
+Wed, Mar 19, 2025  9:29:12 AM: 
+In file included from test.c:5:0:
+exercises.c: In function 'copia_pila':
+exercises.c:97:18: error: comparison between pointer and integer [-Werror]
+    while(top(P1) != -1){
+                  ^~
+exercises.c:99:22: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+       int elemento = top(P1) ;
+                      ^~~
+exercises.c:100:22: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+       push(pila_aux, elemento) ;
+                      ^~~~~~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'int'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+In file included from test.c:5:0:
+exercises.c:104:24: error: comparison between pointer and integer [-Werror]
+    while(top(pila_aux) != -1){
+                        ^~
+exercises.c:106:22: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+       int elemento = top(pila_aux) ;
+                      ^~~
+exercises.c:107:16: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+       push(P1, elemento) ;
+                ^~~~~~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'int'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+In file included from test.c:5:0:
+exercises.c:108:16: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+       push(P2, elemento) ;
+                ^~~~~~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'int'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6ba97de
