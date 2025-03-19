@@ -96,12 +96,12 @@ void copia_pila(Stack* P1, Stack* P2) {
    Stack* pila_aux = create_stack();
    while(top(P1) != NULL){
 
-      int elemento = top(P1) ;
+      int *elemento = top(P1) ;
       push(pila_aux, elemento) ;
       pop(P1) ;
    }
 
-   while(top(pila_aux) != NULL){
+   while((pila_aux) != NULL){
 
       int elemento = top(pila_aux) ;
       push(P1, elemento) ;
