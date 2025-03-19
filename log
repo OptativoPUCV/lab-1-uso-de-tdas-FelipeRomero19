@@ -50,3 +50,15 @@ exercises.c:67:13: error: assignment makes integer from pointer without a cast [
 cc1.exe: all warnings being treated as errors
 Compilation failed
 f05a3ea
+Wed, Mar 19, 2025  9:16:41 AM: 
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:62:16: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+    int valor = first(L);
+                ^~~~~
+exercises.c:67:13: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+       valor = next(L) ;
+             ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+43191e6
