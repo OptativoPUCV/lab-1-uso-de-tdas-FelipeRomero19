@@ -828,3 +828,13 @@ Sat, Mar 22, 2025  8:28:26 PM:
  tests:  3|2
 total_score: 30/70
 368b280
+Sat, Mar 22, 2025  8:28:43 PM: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'eliminaElementos':
+exercises.c:87:21: error: dereferencing pointer to incomplete type 'List {aka struct List}'
+          popCurrent(*L) ;
+                     ^~
+Compilation failed
+faa2a08
