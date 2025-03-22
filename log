@@ -758,3 +758,19 @@ arraylist.h:32:7: note: expected 'List * {aka struct List *}' but argument is of
 cc1.exe: all warnings being treated as errors
 Compilation failed
 3edbc06
+Sat, Mar 22, 2025  8:05:11 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'eliminaElementos':
+exercises.c:89:21: error: passing argument 1 of 'popCurrent' makes pointer from integer without a cast [-Werror=int-conversion]
+          popCurrent(*valor) ;
+                     ^
+In file included from exercises.c:6:0,
+                 from test.c:5:
+arraylist.h:32:7: note: expected 'List * {aka struct List *}' but argument is of type 'int'
+ void *popCurrent(List *L);
+       ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2499049
