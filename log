@@ -910,3 +910,18 @@ exercises.c:142:27: error: initialization makes integer from pointer without a c
 cc1.exe: all warnings being treated as errors
 Compilation failed
 d48cc08
+Sat, Mar 22, 2025 11:50:48 PM: 
+ exercises.c | 29 ++++++++++++++++++-----------
+ 1 file changed, 18 insertions(+), 11 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:150:15: error: passing argument 1 of 'free' makes pointer from integer without a cast [-Werror=int-conversion]
+          free(*ptr) ;
+               ^
+In file included from test.c:2:0:
+c:\mingw\include\stdlib.h:487:39: note: expected 'void *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  void free (void *);
+                                       ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+692df14
