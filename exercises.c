@@ -134,12 +134,12 @@ int parentesisBalanceados(char *cadena) {
     while (*cadena) {
         if (*cadena == '(' || *cadena == '[' || *cadena == '{') {
             
-            push(pila, *cadena);
+            pushFront(pila, *cadena);
         } else if (*cadena == ')' || *cadena == ']' || *cadena == '}') {
             if (top(pila) == NULL) {  
                 return 0; 
             }
-            char ultimo = pop(pila); 
+            char ultimo = popFront(pila); 
 
             // Verificar si el paréntesis coincide
             if ((*cadena == ')' && ultimo != '(') || 
