@@ -941,3 +941,22 @@ Sat, Mar 22, 2025 11:52:12 PM:
  tests:  9|0
 total_score: 70/70
 481051e
+Sat, Mar 22, 2025 11:55:05 PM: 
+ exercises.c | 16 +++++++++-------
+ 1 file changed, 9 insertions(+), 7 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:151:33: error: 'ultimo' undeclared (first use in this function)
+          if ((*cadena == ')' && ultimo != '(') || (*cadena == ']' && ultimo != '[') || (*cadena == '}' && ultimo != '{')) return 0;
+                                 ^~~~~~
+exercises.c:151:33: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:148:15: error: unused variable 'last' [-Werror=unused-variable]
+          char last = *ultEl;
+               ^~~~
+In file included from test.c:5:0:
+exercises.c:157:4: error: implicit declaration of function 'clean' [-Werror=implicit-function-declaration]
+    clean(pila) ;
+    ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+daae095
