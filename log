@@ -960,3 +960,18 @@ exercises.c:157:4: error: implicit declaration of function 'clean' [-Werror=impl
 cc1.exe: all warnings being treated as errors
 Compilation failed
 daae095
+Sat, Mar 22, 2025 11:55:15 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:151:33: error: 'ultimo' undeclared (first use in this function)
+          if ((*cadena == ')' && ultimo != '(') || (*cadena == ']' && ultimo != '[') || (*cadena == '}' && ultimo != '{')) return 0;
+                                 ^~~~~~
+exercises.c:151:33: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:148:15: error: unused variable 'last' [-Werror=unused-variable]
+          char last = *ultEl;
+               ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+7d65b46
