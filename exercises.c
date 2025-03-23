@@ -148,7 +148,9 @@ int parentesisBalanceados(char *cadena) {
          char last = *ultEl;
          free(ultEl); 
 
-         if ((*cadena == ')' && ultimo != '(') || (*cadena == ']' && ultimo != '[') || (*cadena == '}' && ultimo != '{')) return 0;
+         if ((*cadena == ')' && last != '(') ||
+          (*cadena == ']' && last != '[') ||
+           (*cadena == '}' && last != '{')) return 0;
       }
       cadena++;  
    }
