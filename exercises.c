@@ -129,6 +129,12 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
+   char* paren = first(cadena) ;
+   char* copia 
+   while(paren != NULL)
+   {
+
+   } 
    return 0;
 }
 

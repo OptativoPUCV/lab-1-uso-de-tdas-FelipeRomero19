@@ -850,3 +850,23 @@ Sat, Mar 22, 2025  8:31:50 PM:
  tests:  4|1
 total_score: 50/70
 d49da40
+Sat, Mar 22, 2025 11:13:34 PM: 
+ exercises.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:132:24: error: passing argument 1 of 'first' from incompatible pointer type [-Werror=incompatible-pointer-types]
+    char* paren = first(cadena) ;
+                        ^~~~~~
+In file included from exercises.c:6:0,
+                 from test.c:5:
+arraylist.h:10:7: note: expected 'List * {aka struct List *}' but argument is of type 'char *'
+ void* first(List *L);
+       ^~~~~
+In file included from test.c:5:0:
+exercises.c:134:4: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'while'
+    while(paren != NULL)
+    ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+dbbaeb2
