@@ -1013,3 +1013,9 @@ arraylist.h:35:5: note: expected 'List * {aka struct List *}' but argument is of
 cc1.exe: all warnings being treated as errors
 Compilation failed
 209bc68
+Sun, Mar 23, 2025 11:15:41 PM: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  9|0
+total_score: 70/70
+ea35fb6
