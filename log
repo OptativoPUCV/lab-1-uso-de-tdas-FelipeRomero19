@@ -981,3 +981,19 @@ Sat, Mar 22, 2025 11:55:48 PM:
  tests:  9|0
 total_score: 70/70
 a77d059
+Sun, Mar 23, 2025 11:15:21 PM: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:132:16: error: passing argument 1 of 'get_size' makes pointer from integer without a cast [-Werror=int-conversion]
+    if(get_size(*cadena) % 2 != 0)return 0 ;
+                ^
+In file included from exercises.c:6:0,
+                 from test.c:5:
+arraylist.h:35:5: note: expected 'List * {aka struct List *}' but argument is of type 'char'
+ int get_size(List *L);
+     ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+97f45a2
