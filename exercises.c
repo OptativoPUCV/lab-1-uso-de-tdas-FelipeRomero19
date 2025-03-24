@@ -129,7 +129,7 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-   if (strlen(cadena) % 2 != 0)return 0;
+   if (strlen(cadena) % 2 != 0)return 0; //pre condicion para saber si el largo de la cadena es impar, en ese caso jamas los parentesis estaran balanceados
 
    Stack *pila = create_stack();   
 
